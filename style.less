@@ -1,0 +1,626 @@
+@color-lightblue:#04f9df;
+@marin:#33ffff;
+@font-face{
+  font-family: 'Oswald';
+  src: url("../fonts/Oswald-Regular.ttf");
+}
+@font-face{
+  font-family: 'Oswald-Light';
+  src: url("../fonts/Oswald-Light.ttf");
+}
+@font-face{
+  font-family: 'MyriadPro_Regular';
+  src: url("../fonts/MyriadPro-Regular.ttf");
+}
+@media(max-width: 576px) {
+  .header {
+    background: url(../photo1partialy.png);
+    height: 200px;
+    background-size: 100%;
+
+    & .info {
+      margin-top: 20px;
+      position: relative;
+      font-family: "Oswald-Light";
+      color: @color-lightblue;
+      text-align: center;
+      font-size: 24px;
+      & .title {
+        font-size: 24px;
+      }
+
+      & .connect-via {
+        font-size: 20px;
+        line-height: 20px;
+      }
+
+      & * {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .advantages {
+    text-align: center;
+    padding: 0;
+
+    & .for-advantage {
+
+      margin-bottom: 5px;
+    }
+
+    & .advantage {
+      text-align: center;
+      background: @marin;
+    }
+
+    & .for-advantage:last-child {
+      margin-right: auto;
+      text-align: center;
+      margin-bottom: 0;
+    }
+
+    & .for-icon {
+      margin-top: 25px;
+      display: inline-block;
+      text-align: center;
+      width: 245px;
+      height: 152px;
+
+      & .icon-car, .icon-privat, .icon-time {
+
+        background-image: url(../sprite.png);
+        width: 245px;
+        height: 152px;
+      }
+
+      & .icon-car {
+        background-position: -22px -38px;
+        background-size: 410%;
+      }
+
+      & .icon-privat {
+        background-position: 712px -36px;
+        background-size: 400%;
+      }
+
+      & .icon-time {
+        display: inline-block;
+        width: 160px;
+        background-position: 440px -36px;
+        background-size: 591%;
+      }
+    }
+
+    & .text {
+      font: 21px 'Oswald';
+      font-weight: bolder;
+      padding-left: 12px;
+      padding-bottom: 20px;
+    }
+  }
+
+  .steps {
+    text-align: center;
+    padding: 0;
+
+    & .sign {
+      background: black;
+      font: 30px "Oswald-Light";
+      color: #fefefd;
+      text-align: center;
+      margin: 0;
+    }
+
+    & .for-advantage {
+      color: #fefefd;
+      background: rgba(0, 0, 0, .7);
+      margin-bottom: 5px;
+    }
+
+    & .for-advantage:last-child {
+      margin-bottom: 0;
+    }
+
+    & .for-advantage:last-child {
+      margin-right: auto;
+    }
+
+    & .for-icon {
+      text-align: center;
+      height: 200px;
+
+      & .icon-call, .icon-call-back, .icon-pay {
+        display: inline-block;
+        width: 220px;
+        height: 210px;
+        background-image: url(../sprite.png);
+      }
+
+      & .icon-call {
+        background-position: -53px -215px;
+        background-size: 455%;
+      }
+
+      & .icon-call-back {
+        background-position: -288px -215px;
+        background-size: 455%;
+      }
+
+      & .icon-pay {
+        background-position: -526px -215px;
+        background-size: 455%;
+      }
+    }
+
+    & .text {
+      color: white;
+      margin-top: 15px;
+      font: 15px 'Oswald-light';
+      padding: 0 5px 15px 5px;
+    }
+  }
+
+  .pros {
+    padding: 5px;
+    text-align: center;
+
+    & .sign {
+      font: 25px "Oswald-Light";
+      color: #17a8b9;
+
+    }
+
+    & .pros-text {
+      & span {
+        display: block;
+        height: 3px;
+        margin: 5px auto;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+      }
+
+      margin: 20px auto;
+      font: 17px "MyriadPro_Regular";
+    }
+  }
+}////////////////////////////////////
+@media(min-width: 576px)and(max-width: 992px) {
+    .header{
+      height:300px;
+      background:url("../photo1.png");
+      background-size:100%;
+      & .info{
+        position:relative;
+        height:300px;
+        font:20px "Oswald-Light";
+        color:@color-lightblue;
+        text-align: center;
+        & .connect-via{
+          font-size:25px;
+          line-height: 25px;
+        }
+        & .title{
+          font-size:30px;
+        }
+        & *{
+          margin-bottom:0;
+        }
+        & .info-position{
+          position: relative;
+          top:50%;
+          transform: translateY(-60%) ;
+        }
+      }
+    }
+    .advantages{
+      height:100px;
+      padding:0;
+      overflow:visible;
+      text-align: center;
+      &  .for-advantage{
+        width:160px;
+        position:relative;
+        vertical-align:bottom;
+        display:inline-block;
+        margin-right:10px;
+        height:230px;
+      }
+      & .advantage{
+        position:absolute;
+        top:-20%;
+        //transform: translateY(50%);
+        z-index: 2;
+        text-align:left;
+        width:160px;
+        height:230px;
+        background: @marin;
+      }
+      & .for-advantage:last-child{
+        margin-bottom:0;
+        margin-right:auto;
+      }
+      & .for-icon{
+        position:relative;
+        text-align: center;
+
+        margin:3px;
+        width:150px;
+        height:120px;
+        & .icon-car, .icon-privat, .icon-time{
+          display:inline-block;
+          width:150px;
+          height:120px;
+          background-image: url("../sprite.png");
+        }
+        & .icon-car{
+          background-position: -11px -10px;
+         background-size:406%;
+        }
+        &  .icon-privat{
+          background-position: 445px -10px;
+          background-size:406%;
+        }
+        &  .icon-time{
+          width:110px;
+          background-position: 288px -11px;
+          background-size:548%;
+        }
+      }
+      & .text{
+        font:16px/18px 'Oswald';
+        padding-left:7px;
+      }
+    }
+  .steps{
+    height:500px;
+    padding: 0;
+    text-align: center;
+    background: url('../photo2.png') -100px -30px;
+    & .sign{
+      font:35px "Oswald-Light";
+      color:#fefefd;
+      text-align:center;
+      margin-top:100px;
+
+    }
+    &  .for-advantage{
+      color:#fefefd;
+      position:relative;
+      vertical-align:middle;
+      display:inline-block;
+      height:220px;
+      width:160px;
+      margin-right: 10px;
+    }
+    & .narrow{
+      border-radius:8px;
+      background-color:@marin;
+      display:inline-block;
+      vertical-align: middle;
+      width:8px;
+      height:8px;
+    }
+    & .advantage{
+      border-radius: 1px;
+      text-align:left;
+      width:160px;
+
+    }
+    & .for-advantage:last-child{
+      margin-right:auto;
+    }
+    & .for-icon{
+
+      position:relative;
+      text-align: center;
+      width:155px;
+      height:200px;
+      & .icon-call, .icon-call-back, .icon-pay{
+        display:inline-block;
+        width:155px;
+        height:210px;
+        background-image: url(../sprite.png);
+      }
+      & .icon-call{
+        background-position: -42px -138px;
+        background-size:486%;
+      }
+      &  .icon-call-back{
+        background-position: -236px -150px;
+        background-size:513%;
+      }
+      &  .icon-pay{
+        background-position: -410px -152px;
+        background-size:498%;
+      }
+    }
+    & .text{
+      color:#fdfcfc;
+      font:16px/18px 'Oswald-light';
+      padding-left:7px;
+    }
+  }
+  .pros {
+    padding: 5px;
+    text-align: center;
+
+    & .sign {
+      font: 25px "Oswald-Light";
+      color: #17a8b9;
+
+    }
+
+    & .pros-text {
+      & span {
+        display: block;
+        height: 3px;
+        margin: 5px auto;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+      }
+
+      margin: 20px auto;
+      font: 17px "MyriadPro_Regular";
+    }
+  }
+}
+@media(min-width: 768px) {
+  .advantages {
+    & .for-advantage {
+      margin-right: 35px;
+    }
+  }
+
+  .steps {
+    & .narrow {
+      display: inline-block;
+      vertical-align: middle;
+      width: 50px;
+      height: 20px;
+      background-color: transparent;
+      background-image: url(../sprite.png);
+      background-position: -783px 181px;
+      background-size: 892%;
+    }
+  }
+
+  .pros {
+    padding: 5px;
+    text-align: center;
+    background: url(../photo3.png);
+
+    & .sign {
+      font: 25px "Oswald-Light";
+      color: #17a8b9;
+
+    }
+
+    & .pros-text {
+      & span {
+        display: block;
+        height: 3px;
+        margin: 5px auto;
+        border-top: 1px solid white;
+        border-bottom: 1px solid black;
+      }
+      color:white;
+      margin: 20px auto;
+      font: 17px "MyriadPro_Regular";
+    }
+  }
+}
+
+
+@media(min-width: 993px) {
+  .header{
+    height:500px;
+    background-size:100%;
+    background:url("../photo1.png") -88px ;
+    & .info{
+      position:relative;
+      height:500px;
+      font:50px "Oswald-Light";
+      color:@color-lightblue;
+      text-align: center;
+      & .title{
+        font-size:50px;
+      }
+      & .connect-via{
+        font-size:30px;
+        line-height: 15px
+      }
+      & *{
+        margin-bottom:0;
+      }
+      & .info-position{
+        position: relative;
+        top:50%;
+        transform: translateY(-70%) ;
+      }
+    }
+  }
+  .advantages{
+    text-align: center;
+    height:130px;
+    overflow:visible;
+    &  .for-advantage{
+      position:relative;
+      vertical-align:bottom;
+      display:inline-block;
+      width:275px;
+      height:315px;
+      margin-right:40px;
+    }
+    & .advantage{
+      position:absolute;
+      top:-23%;
+      //transform: translateY(50%);
+      z-index: 2;
+      text-align:left;
+      height:315px;
+      background: @marin;
+    }
+    & .for-advantage:last-child{
+      margin-right:auto;
+    }
+    & .for-icon{
+      position:relative;
+      text-align: center;
+      width:245px;
+      height:152px;
+      margin:15px;
+      & .icon-car, .icon-privat, .icon-time{
+        background-image: url(../sprite.png);
+        display:inline-block;
+        width:245px;
+        height:152px;
+      }
+      & .icon-car{
+        background-position: -18px -38px;
+        background-size:410%;
+      }
+      &  .icon-privat{
+        background-position: 712px -36px;
+        background-size:400%;
+      }
+      &  .icon-time{
+        width:160px;
+        background-position: 440px -36px;
+        background-size:591%;
+      }
+    }
+    & .text{
+      font:21px 'Oswald';
+      font-weight: bolder;
+      padding-left:12px;
+    }
+  }
+  .steps{
+    height:730px;
+    text-align: center;
+   background: url('../photo2.png');
+    padding: 0;
+    & .sign{
+      font:55px "Oswald-Light";
+      color:#fefefd;
+      text-align:center;
+      margin-top:150px;
+
+    }
+      &  .for-advantage{
+        color:#fefefd;
+        position:relative;
+        vertical-align:middle;
+        display:inline-block;
+        height:220px;
+        width:250px;
+      }
+    & .narrow{
+      display:inline-block;
+      vertical-align: middle;
+      width:105px;
+      height:40px;
+      background-image: url(../sprite.png);
+      background-position: -694px 378px;
+      background-size:880%;
+    }
+      & .advantage{
+        border-radius: 1px;
+        text-align:left;
+
+
+      }
+      & .for-advantage:last-child{
+        margin-right:auto;
+      }
+      & .for-icon{
+        position:relative;
+        text-align: center;
+        margin:13px;
+        width:250px;
+        height:200px;
+        & .icon-call, .icon-call-back, .icon-pay{
+          display:inline-block;
+          width:220px;
+          height:210px;
+         background-image: url(../sprite.png);
+        }
+        & .icon-call{
+          background-position: -53px -215px;
+          background-size:455%;
+        }
+        &  .icon-call-back{
+          background-position: -288px -215px;
+          background-size:455%;
+        }
+        &  .icon-pay{
+          background-position: -526px -215px;
+          background-size:455%;
+        }
+      }
+      & .text{
+        color:#fdfcfc;
+        margin-top:50px;
+        font:29px/30px 'Oswald-light';
+        padding-left:15px;
+      }
+  }
+  .pros{
+     background:url(../photo3.png);
+    padding:15px 50px 45px 50px ;
+    & .sign{
+      font:60px "Oswald-Light";
+      color:#17a8b9;
+      text-align:center;
+    }
+    & .pros-text{
+      & span{
+        display:none
+      }
+      text-align:left;
+      margin:30px auto;
+      font:24px "MyriadPro_Regular";
+      color:white;
+    }
+  }
+}
+@media(min-width: 1200px) {
+  .header{
+    height:640px;
+    background-size:100%;
+    background:url("../photo1.png");
+    & .info{
+      height:640px;
+      font:60px "Oswald-Light";
+      & .title{
+        font-size:60px;
+      }
+      & *{
+        margin-bottom:0;
+      }
+    }
+  }
+  .advantages{
+    &  .for-advantage{
+      margin-right:80px;
+    }
+  }
+  .steps{
+    height:750px;
+    & .sign{
+      font:70px "Oswald-Light";
+      margin-top:150px;
+    }
+  }
+  .pros{
+    padding:20px 80px 50px 80px ;
+    & .sign{
+      font:70px "Oswald-Light";
+    }
+    & .pros-text{
+      margin:50px auto;
+    }
+  }
+}
+
